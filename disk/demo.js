@@ -75,3 +75,4 @@ MPT.define("ShapeFactory", ["ShapeTypes"], function(ShapeTypes) {
 var ShapeFactory = MPT.use("ShapeFactory");
 alert(ShapeFactory.getShape("CIRCLE", 5).area());
 alert(ShapeFactory.getShape("RECTANGLE", 3, 4).area());
+alert(1);
