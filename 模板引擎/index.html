@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>模板引擎</title>
+    </head>
+    <body>
+       <div id="test"></div>
+    </body>
+</html>
+<script src="mr-templete.js"></script>
+<script type="text/mr-template" id="tpl">
+      Hei, my name is {{name}}, and I\'m {{age}} years old. 
+      test {{ if name === '史洲宇' }}
+      	条件判断展示的区域
+      {{/if}}
+</script>
+<script>
+	var s = mrTemplate('tpl',{
+		'name':'shizhouyu',
+		'age':12
+	});
+	console.log(s);
+</script>

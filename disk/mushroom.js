@@ -2,7 +2,7 @@
 * 框架js
 * @version 1.0.0
 *
-* 作者：
+* 作者：mushroom team
 * 框架名 MPT
 *
 * BUILT: 2017/2/20
@@ -27,7 +27,7 @@
     var noop = function () {
     };
 	//定义框架名字
-	window.MPT = {
+	structure = window.mushroom = window.mr = {
 		/*
 		* 模块定义函数
 		* name 模块名 dependencies 依赖 factory 回调函数
@@ -102,4 +102,17 @@
             }
         }
 	};
+
+	/**
+	 * 模板引擎
+	 * @name    template
+	 * @mobaName   {String}            模板名
+	 * @cont   {Object, String}    数据。如果为字符串则编译并缓存编译结果
+	 * @return  {String, Function}  渲染好的HTML字符串或者渲染方法
+	 */
+	structure.templete = function(mobaName,cont){
+		if(typeof cont === 'string'){
+
+		} 
+	}
 }));
